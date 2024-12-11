@@ -1,43 +1,47 @@
-import { useState } from "react";
 import Image from "next/image";
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <nav className="  dark:bg-rose-200 dark:border-gray-700">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <div className=" animate-bounce">
-            <Image src="/deperrospaola.png" width={150} height={40} />
-          </div>
-        </a>
-
-        <div>
-          <ul className="flex flex-row w-full   ">
-            <li>
-              <a href="#" className="text-red-500 ">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-red-500">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-red-500">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-red-500">
-                Contact
-              </a>
-            </li>
-          </ul>
+    <nav className="relative bg-[#f58f9a] border-b-2 border-[#f88994]">
+      {/* Contenedor del navbar */}
+      <div className="flex items-center justify-center p-4">
+        {/* Logo centrado y sobresaliente */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[90px] bg-[#f58f9a] border-b-2 border-[#f88994] rounded-full flex items-center justify-center">
+          <Image
+            src="/deperrospaola.png"
+            alt="Logo"
+            width={200}
+            height={200}
+            className="animate-customBounce "
+          />
         </div>
       </div>
+
+      {/* Links del navbar */}
+      <ul className="flex justify-around mt-7 text-white text-base pb-3">
+        <li>
+          <a href="#" className="hover:text-gray-300">
+            Quienes somos
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-gray-300">
+            Servicios
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-gray-300">
+            Trabajos
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-gray-300">
+            Contacto
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
 
-export default navbar;
+export default Navbar;

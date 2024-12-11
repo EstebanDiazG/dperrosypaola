@@ -1,11 +1,14 @@
 import Navbar from "@/components/navbar/navbar";
-import { global } from "styled-jsx/css";
+import Footer from "@/components/footer/footer";
+import Body from "@/components/body/body";
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <main></main>
-      <footer></footer>
+      <main>
+        <Body />
+      </main>
+      <Footer />
     </div>
   );
 }

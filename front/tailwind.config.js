@@ -7,9 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        customBounce: {
+          "0%, 100%": { transform: "translateY(25)" },
+          "50%": { transform: "translateY(14px)" }, // Ajusta la altura del "salto"
+        },
+      },
+      animation: {
+        customBounce: "customBounce 3s ease-in-out infinite", // Ajusta duración y tipo de repetición
       },
     },
   },
