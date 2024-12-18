@@ -18,14 +18,14 @@ const Navbar = () => {
       </div>
 
       {/* Links del navbar */}
-      <ul className="flex justify-around mt-7 text-white text-base pb-3">
+      <ul className="flex justify-around mt-7 text-white text-base pb-3 ">
         <li>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#quienes-somos" className="hover:text-gray-300">
             Quienes somos
           </a>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-300">
+          <a href="#servicios" className="hover:text-gray-300 ">
             Servicios
           </a>
         </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#" className="hover:text-gray-300">
-            Contacto
+            ¿Sabias que?
           </a>
         </li>
       </ul>
