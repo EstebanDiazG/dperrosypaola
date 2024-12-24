@@ -24,7 +24,7 @@ const Footer = () => {
               <p>🐾 Modificación de la conducta</p>
             </div>
 
-            <div>
+            <div className="md:mx-16">
               <h3 className="text-lg font-semibold">Educadora</h3>
               <p>Paola Poblete</p>
               <p>Educadora Canina</p>
@@ -47,10 +47,10 @@ const Footer = () => {
               <Image
                 src="/Instagram.svg"
                 alt="Instagram"
-                width={24}
-                height={24}
+                width={34}
+                height={34}
               />
-              <span className="ml-2">dperrosypaola</span>
+              <span className="ml-3 text-sm">dperrosypaola</span>
             </a>
           </div>
         </div>
