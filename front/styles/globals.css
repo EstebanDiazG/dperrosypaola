@@ -32,10 +32,10 @@ html {
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5px;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

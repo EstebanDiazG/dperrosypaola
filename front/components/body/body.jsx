@@ -128,27 +128,26 @@ const Body = () => {
       <section id="quienes-somos" className="text-black py-[100px]">
         <div className="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl font-bold mb-4">Quiénes Somos</h1>
+            <h1 className="text-4xl font-bold mb-4">Conoce a Paola Poblete</h1>
             <p className="text-lg mb-6">
-              En <strong>De Perros y Paola</strong>, somos un equipo apasionado
-              por el bienestar animal. Nos dedicamos a brindar servicios de
-              educación canina, socialización y modificación de conducta,
-              siempre con el objetivo de fortalecer la relación entre tú y tu
-              compañero peludo.
+              En <strong>De Perros y Paola</strong>, soy una apasionada del
+              bienestar animal. Me dedico a ofrecer servicios de educación
+              canina, socialización y modificación de conducta, siempre con el
+              objetivo de fortalecer la relación entre tú y tu compañero peludo.
             </p>
             <p className="text-lg mb-6">
-              Con años de experiencia, Paola Poblete, nuestra entrenadora
-              profesional, utiliza métodos basados en el refuerzo positivo para
-              enseñar a los perros de manera amable, respetuosa y efectiva.
-              Creemos en la importancia de una comunicación clara y empática
-              entre el perro y su dueño para lograr una convivencia armoniosa.
+              Soy Paola Poblete, entrenadora profesional con años de
+              experiencia, y utilizo métodos basados en el refuerzo positivo
+              para enseñar a los perros de manera amable, respetuosa y efectiva.
+              Creo firmemente en la importancia de una comunicación clara y
+              empática entre el perro y su dueño para lograr una convivencia
+              armoniosa.
             </p>
             <p className="text-lg">
-              Nos enorgullece ofrecer un enfoque personalizado, adaptado a las
-              necesidades individuales de cada perro, porque sabemos que cada
-              uno es único. Ya sea que estés buscando mejorar el comportamiento
-              de tu mascota o fortalecer su socialización, estamos aquí para
-              ayudarte.
+              Cada perro es único, por lo que ofrezco un enfoque completamente
+              personalizado, adaptado a las necesidades específicas de tu
+              mascota. Ya sea que busques mejorar su comportamiento o fortalecer
+              su socialización, estoy aquí para ayudarte.
             </p>
           </div>
           <div className="md:w-1/2 md:px-28 transform transition-transform duration-300 hover:scale-105 ">
