@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Botón de hamburguesa para pantallas pequeñas */}
       <button
         ref={buttonRef}
-        className="lg:hidden absolute top-8 left-4 text-white text-4xl"
+        className="lg:hidden absolute top-8 left-4 text-black text-4xl"
         onClick={toggleMenu}
       >
         &#9776; {/* Símbolo de hamburguesa */}
@@ -62,7 +62,7 @@ const Navbar = () => {
         ref={menuRef}
         className={`lg:flex lg:mt-7 lg:justify-around lg:static text-black text-lg pb-4 ${
           isMenuOpen
-            ? "absolute top-24 p-12 px-4 w-full text-center h-60 text-base rounded-lg bg-[#f58f9a] border-[#f88994] block"
+            ? "absolute top-24 p-12 px-4 w-full text-center h-60 text-base rounded-lg bg-[#f2ecc3] border-[#ece3a4] block"
             : "hidden"
         } lg:block space-y-4 lg:space-y-0`}
       >
