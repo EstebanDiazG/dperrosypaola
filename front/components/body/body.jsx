@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { dogTrainingTips } from "@/utils/perros";
+import { videos } from "@/utils/videos";
 
 // import swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,88 +11,6 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
 const Body = () => {
-  const videos = [
-    "https://www.instagram.com/p/CHblqvlgZl1/",
-    "https://www.instagram.com/p/CGIJnC3JTPN/",
-    "https://www.instagram.com/p/CGIJ_2VppiI/",
-    "https://www.instagram.com/p/Bxh6SWLF7C2/",
-  ];
-
-  const dogTrainingTips = [
-    {
-      title: "Entrenamiento básico de obediencia",
-      description:
-        'Los perros deben aprender comandos básicos como "sentado", "quieto" y "aquí". Estos comandos ayudan a establecer una buena comunicación con tu perro y mejorar su comportamiento.',
-      icon: (
-        <img
-          src="/perrosvg/dog1.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-    {
-      title: "Socialización con otros perros",
-      description:
-        "Es importante socializar a los perros desde una edad temprana. Esto les enseña a comportarse con otros perros y personas, reduciendo la agresión y el miedo.",
-      icon: (
-        <img
-          src="/perrosvg/dog2.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-    {
-      title: "Rutina de ejercicio",
-      description:
-        "Los perros necesitan ejercicio diario. Esto puede incluir caminatas, juegos o correr. El ejercicio regular no solo mejora la salud física, sino que también ayuda a mantener el equilibrio emocional de tu perro.",
-      icon: (
-        <img
-          src="/perrosvg/dog3.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-    {
-      title: "Entrenamiento con refuerzos positivos",
-      description:
-        "El refuerzo positivo es una técnica muy efectiva en el entrenamiento de perros. Se basa en recompensar el buen comportamiento en lugar de castigar el malo.",
-      icon: (
-        <img
-          src="/perrosvg/dog4.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-    {
-      title: "Cuidado de la higiene dental",
-      description:
-        "El cuidado dental es esencial para la salud de tu perro. Los perros pueden desarrollar enfermedades dentales si no se cepillan los dientes regularmente.",
-      icon: (
-        <img
-          src="/perrosvg/dog5.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-    {
-      title: "Evitar sobrealimentación",
-      description:
-        "La sobrealimentación puede llevar a la obesidad, lo que pone a tu perro en riesgo de muchas enfermedades. Mantén un control adecuado de la dieta y las porciones de comida.",
-      icon: (
-        <img
-          src="/perrosvg/dog6.svg"
-          alt="Icono de perro"
-          className="w-12 h-12 text-black"
-        />
-      ),
-    },
-  ];
-
   return (
     <main className=" text-gray-800">
       {/* Botón flotante de WhatsApp */}
@@ -110,14 +30,13 @@ const Body = () => {
           style={{
             backgroundImage: "url('/perrobanner.jpg')",
             backgroundPosition: "center top",
+            fontFamily: "Bad Script",
           }}
         >
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="relative z-10 text-center py-20">
-            <h1 className="text-4xl font-bold">
-              Bienvenido a De Perros y Paola
-            </h1>
-            <p className="text-xl mt-4">
+            <h1 className="text-4xl">Bienvenido a De Perros y Paola</h1>
+            <p className="text-2xl mt-4">
               La educación canina que tu perro merece
             </p>
           </div>
@@ -170,7 +89,7 @@ const Body = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Servicio 1 */}
-            <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-slate-100 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-xl font-semibold text-[#f58f9a] mb-4">
                 🐾 Comunicación Efectiva
               </h3>
@@ -185,7 +104,7 @@ const Body = () => {
             </div>
 
             {/* Servicio 2 */}
-            <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-slate-100 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-xl font-semibold text-[#f58f9a] mb-4">
                 🐶 Socialización
               </h3>
@@ -200,7 +119,7 @@ const Body = () => {
             </div>
 
             {/* Servicio 3 */}
-            <div className="bg-white p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-slate-100 p-6 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <h3 className="text-xl font-semibold text-[#f58f9a] mb-4">
                 🐕‍🦺 Modificación de Conducta
               </h3>
@@ -242,7 +161,7 @@ const Body = () => {
       </section>
 
       {/* Seccion ¿Sabias que?*/}
-      <section id="sabias-que" className="py-16">
+      <section id="sabias-que" className="py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-black mb-8">¿Sabías que?</h2>
           <Swiper
@@ -269,8 +188,11 @@ const Body = () => {
             className="w-full"
           >
             {dogTrainingTips.map((tip, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
-                <div className="bg-white p-6 w-[70%] md:w-[80%] mx-auto  rounded-lg shadow-lg hover:shadow-xl transition-shadow md:h-80 flex flex-col">
+              <SwiperSlide
+                key={index}
+                className="flex justify-center md:pb-2 md:pt-2"
+              >
+                <div className="bg-slate-100 p-6 w-[70%] md:w-[80%] md:h-[29dvh] mx-auto  rounded-lg shadow-lg hover:shadow-xl transition-shadow  flex flex-col">
                   <div className="flex justify-center mb-4">{tip.icon}</div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     {tip.title}
@@ -279,8 +201,14 @@ const Body = () => {
                 </div>
               </SwiperSlide>
             ))}
-            <div className="swiper-button-prev absolute left-4 "></div>
-            <div className="swiper-button-next absolute right-4"></div>
+            <div
+              className="swiper-button-prev absolute left-4"
+              style={{ color: "#314c53" }}
+            ></div>
+            <div
+              className="swiper-button-next absolute right-4"
+              style={{ color: "#314c53" }}
+            ></div>
           </Swiper>
         </div>
       </section>

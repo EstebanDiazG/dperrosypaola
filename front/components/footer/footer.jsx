@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3c363b] text-white py-6">
+    <footer className="bg-[#c5e0dc] text-black py-6 rounded-xl">
       <div className="container mx-auto px-4">
         {/* Sección superior con enlaces y logo */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-600 pb-4 mb-4">
@@ -18,20 +18,35 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:px-10">
             <div>
-              <h3 className="text-lg font-semibold">Servicios</h3>
+              <h3
+                className="text-lg font-semibold"
+                style={{ fontFamily: "Bad Script" }}
+              >
+                Servicios
+              </h3>
               <p>🐾 Comunicación efectiva con tu perro</p>
               <p>🐾 Socialización</p>
               <p>🐾 Modificación de la conducta</p>
             </div>
 
             <div className="md:mx-16">
-              <h3 className="text-lg font-semibold">Educadora</h3>
+              <h3
+                className="text-lg font-semibold"
+                style={{ fontFamily: "Bad Script" }}
+              >
+                Educadora
+              </h3>
               <p>Paola Poblete</p>
               <p>Educadora Canina</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold">Atención</h3>
+              <h3
+                className="text-lg font-semibold"
+                style={{ fontFamily: "Bad Script" }}
+              >
+                Atención
+              </h3>
               <p>Lunes a Viernes: 9:00 - 18:00</p>
               <p>Sábado: 10:00 - 14:00</p>
             </div>
