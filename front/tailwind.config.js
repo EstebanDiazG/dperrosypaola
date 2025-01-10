@@ -10,7 +10,7 @@ module.exports = {
       keyframes: {
         customBounce: {
           "0%, 100%": { transform: "translateY(25)" },
-          "50%": { transform: "translateY(14px)" }, // Ajusta la altura del "salto"
+          "50%": { transform: "translateY(17px)" }, // Ajusta la altura del "salto"
         },
       },
       animation: {

@@ -1,12 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Miniver&family=Signika:wght@300..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background-color: #f3e2e8;
+  background-color: #ffffff;
   min-height: 100vh;
-  font-family: monospace;
+  font-family: "Signika", sans-serif;
   color: #1f2937;
+}
+
+h1 {
+  font-family: "Bad Script", serif;
+}
+
+h2 {
+  font-family: "Bad Script", serif;
 }
 
 html {
@@ -34,12 +44,13 @@ html {
   bottom: 20px;
   right: 5px;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
+  background-color: rgba(8, 39, 39, 0.644);
   z-index: 1000;
 }
 
